@@ -15,6 +15,8 @@ const TeacherSidebar = () => {
       setActiveTab("profile");
     } else if (path === "/teacher/attendance") {
       setActiveTab("attendance");
+    } else if (path === "/teacher/marks") {
+      setActiveTab("marks");
     }
   }, [location]);
 
@@ -43,6 +45,15 @@ const TeacherSidebar = () => {
             className={activeTab === "attendance" ? "active" : ""}
           >
             <i className="fas fa-tasks"></i> Attendance
+          </Link>
+        </li>
+
+        <li>
+          <Link
+            to="/teacher/marks"
+            className={activeTab === "marks" ? "active" : ""}
+          >
+            <i className="fas fa-tasks"></i> Marks
           </Link>
         </li>
       </ul>

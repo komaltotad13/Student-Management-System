@@ -1,0 +1,53 @@
+/* Marks.css */
+/* 
+.marks-container {
+  display: flex;
+}
+
+.marks .main-content {
+  margin-left: 250px; 
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.marks .sidebar {
+  width: 250px; 
+  background-color: #f4f4f4;
+} */
+
+/* ----------------------------- */
+/* Marks.css */
+/* .marks-container {
+  display: flex;
+}
+
+.marks .main-content {
+  padding: 20px;
+  flex-grow: 1;
+  color: #343a40;
+} */
+
+/* ----------------------------- */
+/* Marks.css */
+.marks-container {
+  display: flex;
+}
+
+.main-content {
+  margin-left: 230px;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.view-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.view-button:hover {
+  background-color: #0056b3;
+}

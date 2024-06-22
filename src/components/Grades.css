@@ -117,3 +117,10 @@ table tbody tr:hover {
 .create-grade .MuiTextField-root {
   margin-right: 10px;
 }
+
+/* ============================================ */
+
+.grades-container {
+  margin-left: 220px;
+  padding: 20px;
+}

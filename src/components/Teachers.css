@@ -1,4 +1,6 @@
 .teachers-container {
+  margin-left: 220px;
+  padding: 20px;
   display: flex;
 }
 
