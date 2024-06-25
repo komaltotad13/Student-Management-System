@@ -8,6 +8,24 @@
   flex-grow: 1;
 }
 
+.grade-subject-info {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.grade-subject-info h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.grade-subject-info span {
+  font-weight: bold;
+  color: #007bff;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -22,4 +40,28 @@ td {
 
 th {
   background-color: #f2f2f2;
+}
+
+input[type="number"] {
+  width: 60px;
+  padding: 5px;
+}
+
+.update-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.update-button:hover {
+  background-color: #0056b3;
+}
+
+.stored-mark {
+  margin-left: 10px;
+  font-weight: bold;
+  color: #28a745;
 }

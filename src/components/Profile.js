@@ -1,31 +1,3 @@
-// import React from "react";
-// import Sidebar from "./Sidebar";
-// import "./Profile.css";
-
-// const Profile = () => {
-//   // Mock profile data for now
-//   const profileData = {
-//     name: "Admin User",
-//     email: "admin@example.com",
-//   };
-
-//   return (
-//     <div className="profile-container">
-//       <Sidebar />
-//       <div className="profile-content">
-//         <h2>Profile</h2>
-//         <div className="profile-card">
-//           <h3>{profileData.name}</h3>
-//           <p>Email: {profileData.email}</p>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Profile;
-
-// ================================================================
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Sidebar from "./Sidebar";

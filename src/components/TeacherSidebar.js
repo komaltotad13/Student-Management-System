@@ -5,7 +5,7 @@ import "./TeacherSidebar.css";
 
 const TeacherSidebar = () => {
   const location = useLocation();
-  const [activeTab, setActiveTab] = useState("home");
+  const [activeTab, setActiveTab] = useState("");
 
   useEffect(() => {
     const path = location.pathname;

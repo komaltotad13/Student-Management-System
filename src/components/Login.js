@@ -1,102 +1,3 @@
-// import React, { useState } from "react";
-// import axios from "axios";
-// import { useNavigate } from "react-router-dom";
-
-// const Login = ({ userType }) => {
-//   const [email, setEmail] = useState("");
-//   const [password, setPassword] = useState("");
-//   const [registrationNumber, setRegistrationNumber] = useState("");
-//   const [message, setMessage] = useState("");
-//   const navigate = useNavigate();
-
-//   const handleSubmit = async (event) => {
-//     event.preventDefault();
-//     try {
-//       let response;
-//       if (userType === "admin" || userType === "teacher") {
-//         response = await axios.post(
-//           `http://localhost:8080/api/${userType}/login`,
-//           {
-//             email,
-//             password,
-//           }
-//         );
-//       } else if (userType === "student") {
-//         response = await axios.post(`http://localhost:8080/api/student/login`, {
-//           registrationNumber,
-//           password,
-//         });
-//       }
-//       setMessage(response.data);
-
-//       if (response.data === "Admin logged in successfully") {
-//         alert(response.data);
-//         navigate("/admin/dashboard");
-//       } else if (response.data === "Teacher logged in successfully") {
-//         alert(response.data);
-//         navigate("/teacher/dashboard"); // Assuming you have a teacher dashboard
-//       } else if (response.data === "Student logged in successfully") {
-//         alert(response.data);
-//         navigate("/student/dashboard"); // Assuming you have a student dashboard
-//       } else {
-//         alert("Invalid credentials");
-//       }
-//     } catch (error) {
-//       console.error("There was an error logging in!", error);
-//       setMessage("Invalid credentials");
-//       alert("Invalid credentials");
-//     }
-//   };
-
-//   return (
-//     <div>
-//       <h2>Login as {userType}</h2>
-//       <form onSubmit={handleSubmit}>
-//         {(userType === "admin" || userType === "teacher") && (
-//           <>
-//             <div>
-//               <label>Email:</label>
-//               <input
-//                 type="email"
-//                 value={email}
-//                 onChange={(e) => setEmail(e.target.value)}
-//                 required
-//               />
-//             </div>
-//           </>
-//         )}
-//         {userType === "student" && (
-//           <>
-//             <div>
-//               <label>Registration Number:</label>
-//               <input
-//                 type="text"
-//                 value={registrationNumber}
-//                 onChange={(e) => setRegistrationNumber(e.target.value)}
-//                 required
-//               />
-//             </div>
-//           </>
-//         )}
-//         <div>
-//           <label>Password:</label>
-//           <input
-//             type="password"
-//             value={password}
-//             onChange={(e) => setPassword(e.target.value)}
-//             required
-//           />
-//         </div>
-//         <button type="submit">Login</button>
-//       </form>
-//       {message && <p>{message}</p>}
-//     </div>
-//   );
-// };
-
-// export default Login;
-
-// [newest]
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -126,10 +27,13 @@ const Login = ({ userType }) => {
           }
         );
       } else if (userType === "student") {
-        response = await axios.post(`http://localhost:8080/api/student/login`, {
-          registrationNumber,
-          password,
-        });
+        response = await axios.post(
+          `http://localhost:8080/api/students/login`,
+          {
+            registrationNumber,
+            password,
+          }
+        );
       }
 
       setMessage(response.data);
