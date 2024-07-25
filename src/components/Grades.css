@@ -1,0 +1,119 @@
+.grades-container {
+  display: flex;
+}
+
+.grades-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f4f7f9;
+}
+
+h2 {
+  margin: 0 0 20px;
+}
+
+.create-grade {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.create-grade input {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.create-grade button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.create-grade button:hover {
+  background-color: #0056b3;
+}
+
+.grades-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.grades-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.grades-list li button {
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.grades-list li button:hover {
+  background-color: #c82333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table th {
+  background-color: #f4f7f9;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+  background-color: #ddd;
+}
+
+/* ============================================= */
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-input {
+  margin-right: 10px;
+  flex: 1;
+}
+
+.form-button {
+  margin-left: 10px;
+}
+/* ============================================= */
+
+.create-grade-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.create-grade {
+  display: flex;
+  align-items: center;
+}
+
+.create-grade .MuiTextField-root {
+  margin-right: 10px;
+}

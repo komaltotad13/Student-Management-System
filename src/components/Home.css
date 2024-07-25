@@ -1,0 +1,106 @@
+.home {
+  background-image: url("background.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-buttons button,
+.dropbtn {
+  background-color: transparent;
+  color: #333;
+  border: none;
+  margin: 0 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease; /* Changed transition property to background-color */
+}
+
+.navbar-buttons button:hover,
+.dropbtn:hover {
+  background-color: #3498db; /* Changed hover background color to a blueish shade */
+}
+
+.login-dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 2rem; /* Added right margin to move the login button to the left */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: -13px;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #7fbbfb;
+}
+
+.login-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.content {
+  text-align: center;
+  color: #333;
+  margin-top: 20vh;
+}
+
+.content h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.cta-button:hover {
+  background-color: #2980b9;
+}
